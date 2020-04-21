@@ -9,46 +9,104 @@
     <link rel="shortcut icon" href="favicon.ico" />
     <link rel="stylesheet" href="./iconfont/iconfont.css">
     <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/bootnavbar.css">
-    <link rel="stylesheet" href="./css/animate.css">
     <link rel="stylesheet" href="./css/index.css">
+    <!-- <script src="./js/animate.js"></script> -->
     <script src="./lib/jquery-3.4.1.min.js"></script>
-    <script src="./js/animate.js"></script>
     <script src="./js/index.js"></script>
 
 
 </head>
 
 <body>
+    <!-- 1.顶部导航栏 -->
     <nav>
+        <!-- 1.1顶部导航栏左侧 -->
         <div class="nav-left">
-            <ul class="car">车型
-                <span class="length"></span>
-                <li>AVENTADOR</li>
-                <li>HURACAN</li>
-                <li>URUS</li>
-                <li>限量系类</li>
-                <li>概念车</li>
-            <ul class="car-service">车主服务
-                <span class="length"></span>
+            <ul class="nav-left-menu">
+                <li class="car">车型
+                    <span class="car-bottom"></span>
+                </li>
+                <li class="service">车主服务
+                    <span class="car-bottom"></span>
+                </li>
+                <li class="match">赛车运动
+                    <span class="car-bottom"></span>
+                </li>
             </ul>
-            <ul class="car-match">赛车运动
-                <span class="length"></span>
+            <!-- 1.1.1车型一级下拉列表 -->
+            <ul class="car-menu">
+                <li class="car-menu-one">AVENTADOR</li>
+                <li class="car-menu-two">HURACAN</li>
+                <li class="car-menu-three">URUS</li>
+                <li class="car-menu-four">限量系类</li>
+                <li class="car-menu-five">概念车</li>
+            </ul>
+            <div class="nav-two">
+                <!-- 1.1.1.1车型二级下拉列表1 -->
+                <ul class="car-menu-first">
+                    <li> AVENTADOR S</li>
+                    <li> AVENTADOR S ROADSTER</li>
+                    <li> AVENTADOR SVJ</li>
+                    <li> AVENTADOR SVJ ROADSTER</li>
+                </ul>
+                <!-- 1.1.1.2车型二级下拉列表2 -->
+                <ul class="car-menu-second">
+                    <li> HURACAN EVO</li>
+                    <li> HURACAN EVO SPYDER</li>
+                    <li> HURACAN EVO RWD</li>
+                </ul>
+                <!-- 1.1.1.2车型二级下拉列表3 -->
+                <ul class="car-menu-third">
+                    <li>SIAN FKP 37</li>
+                    <li>CENTENARIO ROADSTER</li>
+                    <li>CENTENARIO</li>
+                </ul>
+                <!-- 1.1.1.2车型二级下拉列表4 -->
+                <ul class="car-menu-fourth">
+                    <li>TERZO MILLENNIO</li>
+                    <li> ASTERION</li>
+                    <li> ESTOQUE</li>
+                </ul>
+            </div>
+            <!-- 1.1.2车型三级下拉列表 -->
+            <div class="nav-third">
+                <div class="nav-third-one">
+                    <!-- 图片 -->
+                    <img src="./img/HQ-Aventador-S.webp" alt="">
+                    <!-- 汽车参数 -->
+                    <div class="nav-third-one-top"></div>
+                    <div class="nav-third-one-center"></div>
+                    <div class="nav-third-one-bottom-right"></div>
+                    
+                </div>
+            </div>
+            <!-- 1.1.3车主服务一级下拉列表 -->
+            <ul class="service-menu">
+                <li class="service-menu-one">FINANCIAL SERVICES</li>
+                <li class="service-menu-two">AD PERSONAM</li>
+                <li class="service-menu-three">原装辅件</li>
+                <li class="service-menu-four">零配件</li>
+                <li class="service-menu-five">协助与维护</li>
+                <li class="service-menu-six">二手车</li>
+                <li class="service-menu-seven">经典</li>
             </ul>
 
         </div>
+        <!-- 1.2右侧顶部导航栏 -->
         <div class="nav-right">
+            <!-- 1.2.1右侧顶部导航栏跳转链接 -->
             <div class="nav-right-left">
                 <a href="">查找一个经销商
-                    <span class="length"></span>
+                    <span class="car-bottom"></span>
                 </a>
                 <a href="">博物馆
-                    <span class="length"></span>
+                    <span class="car-bottom"></span>
                 </a>
                 <a href="">商店
-                    <span class="length"></span>
+                    <span class="car-bottom"></span>
                 </a>
             </div>
+            <!-- 1.2.2右侧顶部导航栏功能 -->
             <div class="nav-right-right">
                 <ul class=" iconfont icon-shezhi setUp">
 
