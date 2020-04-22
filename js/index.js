@@ -36,6 +36,7 @@ $(function () {
 
         $('.car-menu').hide()
         $('.nav-two').children().hide()
+        $('.car-parameter').hide()
     })
     //赛车运动导航栏效果
     $(".match").on('mouseenter', function () {
@@ -70,6 +71,7 @@ $(function () {
         $(this).eq(firstLi).parent().parent().parent().stop().animate({
             'height': 370
         })
+        $('.nav-third-car').hide()
     })
     // 当鼠标移入车型一级下拉列表的第二个选项时，二级第一个列表出现,其他二级列表隐藏
     $('.car-menu-two').on('mouseenter', function () {
@@ -87,6 +89,8 @@ $(function () {
         $(this).eq(firstLi).parent().parent().parent().stop().animate({
             'height': 370
         })
+        $('.nav-third-car').hide()
+
     })
     // 当鼠标移入车型一级下拉列表的第三个选项时，三级列表出现,其他二级列表隐藏
     $('.car-menu-three').on('mouseenter', function () {
@@ -97,6 +101,10 @@ $(function () {
         $(this).siblings().css({
             'opacity': 0.5
         })
+        $(this).parent().parent().parent().stop().animate({
+            'height': 862
+        })
+        $('.car-parameter').show()
     })
     // 当鼠标移入车型一级下拉列表的第四个选项时，二级第三个列表出现,其他二级列表隐藏
     $('.car-menu-four').on('mouseenter', function () {
@@ -114,6 +122,7 @@ $(function () {
         $(this).eq(firstLi).parent().parent().parent().stop().animate({
             'height': 370
         })
+        $('.nav-third-car').hide()
     })
     // 当鼠标移入车型一级下拉列表的第五个选项时，二级第四个个列表出现,其他二级列表隐藏
     $('.car-menu-five').on('mouseenter', function () {
@@ -131,6 +140,7 @@ $(function () {
         $(this).eq(firstLi).parent().parent().parent().stop().animate({
             'height': 370
         })
+        $('.nav-third-car').hide()
     })
 
     // 当鼠标移入车型三级下拉列表的第一个选项时，其他选项变暗，选择的高亮
@@ -149,6 +159,12 @@ $(function () {
         $(this).eq(firstLi).parent().parent().parent().parent().stop().animate({
             'height': 862
         })
+        $('.nav-third-car').show()
+        $('.nav-third-car ').animate({
+            left: 30
+        })
+        $('.car-parameter').show()
+        $(this).show()
     })
     $('.car-menu-second li').on('mouseenter', function () {
 
@@ -161,6 +177,7 @@ $(function () {
         $(this).eq(firstLi).parent().parent().parent().parent().stop().animate({
             'height': 862
         })
+        $('.car-parameter').show()
     })
     $('.car-menu-third li').on('mouseenter', function () {
 
@@ -170,9 +187,7 @@ $(function () {
         $(this).eq(thirdLi).siblings().css({
             'opacity': 0.5
         })
-        $(this).eq(firstLi).parent().parent().parent().parent().stop().animate({
-            'height': 862
-        })
+
     })
     $('.car-menu-fourth li').on('mouseenter', function () {
 
@@ -182,9 +197,52 @@ $(function () {
         $(this).eq(fourthLi).siblings().css({
             'opacity': 0.5
         })
-        $(this).eq(firstLi).parent().parent().parent().parent().stop().animate({
-            'height': 862
-        })
+    })
+    $('.car-menu-first-one').on('mouseenter', function () {
+        $('.car-parameter').show()
+        $('.nav-third-one').siblings().fadeOut()
+        $('.nav-third-one').fadeIn()
+    })
+    $('.car-menu-first-two').on('mouseenter', function () {
+        $('.car-parameter').show()
+        $('.nav-third-two').siblings().fadeOut()
+        $('.nav-third-two').fadeIn()
+
+    })
+    $('.car-menu-first-three').on('mouseenter', function () {
+        $('.car-parameter').show()
+        $('.nav-third-three').siblings().fadeOut()
+        $('.nav-third-three').fadeIn()
+
+    })
+    $('.car-menu-first-four').on('mouseenter', function () {
+        $('.car-parameter').show()
+        $('.nav-third-four').siblings().fadeOut()
+        $('.nav-third-four').fadeIn()
+
+    })
+    $('.car-menu-second-one').on('mouseenter', function () {
+        $(this).parent().parent().next().show()
+        $('.nav-third-five').siblings().fadeOut()
+        $('.nav-third-five').fadeIn()
+
+    })
+    $('.car-menu-second-two').on('mouseenter', function () {
+        $(this).parent().parent().next().show()
+        $('.nav-third-six').siblings().fadeOut()
+        $('.nav-third-six').fadeIn()
+
+    })
+    $('.car-menu-second-three').on('mouseenter', function () {
+        $(this).parent().parent().next().show()
+        $('.nav-third-seven').siblings().fadeOut()
+        $('.nav-third-seven').fadeIn()
+
+    })
+    $('.car-menu-three').on('mouseenter', function () {
+        $('.nav-third-eight').siblings().fadeOut()
+        $('.nav-third-eight').fadeIn()
+
     })
 
 

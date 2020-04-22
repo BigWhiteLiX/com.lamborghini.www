@@ -114,16 +114,17 @@ nav {
   cursor: pointer;
 }
 .nav-third {
+  display: none;
   position: absolute;
   width: 1365px;
   height: 778px;
   left: 267px;
   top: 0px;
 }
-.nav-third .nav-third-one img {
-  width: 1365px;
+.nav-third .nav-third-car img {
+  width: 1350px;
 }
-.nav-third .nav-third-one .nav-third-one-top {
+.nav-third .nav-third-car .nav-third-one-top {
   position: absolute;
   right: 0;
   top: 180px;
@@ -132,7 +133,35 @@ nav {
   border: 1px solid #585858;
   box-sizing: border-box;
 }
-.nav-third .nav-third-one .nav-third-one-center {
+.nav-third .nav-third-car .nav-third-one-top span {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.nav-third .nav-third-car .nav-third-one-top p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0 15px;
+}
+.nav-third .nav-third-car .nav-third-one-top .hexagon {
+  height: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-top .hexagon .exagon {
+  float: left;
+  height: 50px;
+  fill: transparent;
+  stroke: #fff;
+  margin-top: 50px;
+  margin-left: 88px;
+}
+.nav-third .nav-third-car .nav-third-one-top:hover .exagon {
+  fill: #fff;
+}
+.nav-third .nav-third-car .nav-third-one-top:hover .foreground {
+  stroke: #111;
+}
+.nav-third .nav-third-car .nav-third-one-center {
   position: absolute;
   right: 0;
   top: 332px;
@@ -142,7 +171,7 @@ nav {
   border-top: 0 ;
   box-sizing: border-box;
 }
-.nav-third .nav-third-one .nav-third-one-bottom-right {
+.nav-third .nav-third-car .nav-third-one-bottom-right {
   position: absolute;
   right: 0;
   top: 614px;
@@ -151,6 +180,107 @@ nav {
   border: 1px solid #585858;
   border-top: 0 ;
   box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-right span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-right p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom {
+  position: absolute;
+  right: 242px;
+  top: 614px;
+  width: 301px;
+  height: 152px;
+  border: 1px solid #585858;
+  border-top: 0 ;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom {
+  position: absolute;
+  right: 543px;
+  top: 613px;
+  width: 406px;
+  height: 153px;
+  border: 1px solid #585858;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left {
+  position: absolute;
+  right: 949px;
+  top: 613px;
+  width: 372px;
+  height: 153px;
+  border: 1px solid #585858;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left span {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0 15px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left .hexagon {
+  height: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left .hexagon .exagon {
+  float: left;
+  height: 50px;
+  fill: transparent;
+  stroke: #fff;
+  margin-top: 50px;
+  margin-left: 88px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left:hover .exagon {
+  fill: #fff;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left:hover .foreground {
+  stroke: #111;
 }
 .nav-right {
   float: right;
@@ -192,4 +322,9 @@ nav {
 }
 .nav-right .nav-right-right ul:hover {
   opacity: 1;
+}
+.watch {
+  list-style-type: none;
+  margin-top: 94px;
+  width: 100%;
 }

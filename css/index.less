@@ -128,16 +128,18 @@ nav{
 
  }
     // <!-- 1.1.2车型三级下拉列表 -->
-    .nav-third{
+.nav-third{
+    display: none;
         position: absolute;
         width: 1365px;
         height: 778px;
         left:267px;
         top:0px;
-        .nav-third-one{
+        .nav-third-car{
             img{
-                width: 1365px;
+           width: 1350px;
             }
+      
             .nav-third-one-top{
                 position: absolute;
                 right:0;
@@ -146,7 +148,40 @@ nav{
                 height: 152px;
                 border: 1px solid#585858;
                 box-sizing: border-box;
+              
+                span{
+                    color: #fff;
+                    margin-left: 15px;
+                    font-size: 14px;
+                }
+                p{
+                    float: left;
+                    font-size: 34px;
+                    color: #ffffff;
+                    margin: 0 15px;
+
+                }
+                .hexagon{
+                height: 50px;
+                .exagon{
+                    float: left;
+                    height: 50px;
+                    fill: transparent;
+                    stroke: #fff;
+                    margin-top: 50px;
+                    margin-left: 88px;
+                }
+               
             }
+         
+        }
+        .nav-third-one-top:hover .exagon{
+            fill:#fff;
+
+        }
+        .nav-third-one-top:hover .foreground {
+            stroke: #111;
+        }
             .nav-third-one-center{
                 position: absolute;
                 right:0;
@@ -156,7 +191,7 @@ nav{
                 border: 1px solid#585858;
                 border-top:0 ;
                 box-sizing: border-box;
-            }
+        }
             .nav-third-one-bottom-right{
                 position: absolute;
                 right:0;
@@ -166,9 +201,113 @@ nav{
                 border: 1px solid#585858;
                 border-top:0 ;
                 box-sizing: border-box;
-            }
+                span{
+                    display: inline-block;
+                    color: #fff;
+                    margin-left: 80px;
+                    font-size: 14px;
+                    margin-top: 50px;
+                }
+                p{
+                    float: left;
+                    font-size: 34px;
+                    color: #ffffff;
+                    margin: 0;
+                    margin-left:80px;
+                }
+        }
+            .nav-third-one-bottom-bottom{
+                position: absolute;
+                right:242px;
+                top:614px;
+                width: 301px;
+                height: 152px;
+                border: 1px solid#585858;
+                border-top:0 ;
+                border-right:0 ;
+                box-sizing: border-box;
+                span{
+                    display: inline-block;
+                    color: #fff;
+                    margin-left: 80px;
+                    font-size: 14px;
+                    margin-top: 50px;
+                }
+                p{
+                    float: left;
+                    font-size: 34px;
+                    color: #ffffff;
+                    margin: 0;
+                    margin-left:80px;
+                }
+        }
+            .nav-third-one-bottom-left-bottom{
+                position: absolute;
+                right:543px;
+                top:613px;
+                width: 406px;
+                height: 153px;
+                border: 1px solid#585858;
+                border-right:0 ;
+                box-sizing: border-box;
+                span{
+                    display: inline-block;
+                    color: #fff;
+                    margin-left: 80px;
+                    font-size: 14px;
+                    margin-top: 50px;
+                }
+                p{
+                    float: left;
+                    font-size: 34px;
+                    color: #ffffff;
+                    margin: 0;
+                    margin-left:80px;
+                }
+        }
+            .nav-third-one-bottom-left{
+                position: absolute;
+                right:949px;
+                top:613px;
+                width: 372px;
+                height: 153px;
+                border: 1px solid#585858;
+                border-right:0 ;
+                box-sizing: border-box;
+                span{
+                    color: #fff;
+                    margin-left: 15px;
+                    font-size: 14px;
+                }
+                p{
+                    float: left;
+                    font-size: 34px;
+                    color: #ffffff;
+                    margin: 0 15px;
+
+                }
+                .hexagon{
+                    height: 50px;
+                    .exagon{
+                        float: left;
+                        height: 50px;
+                        fill: transparent;
+                        stroke: #fff;
+                        margin-top: 50px;
+                        margin-left: 88px;
+                    }
+                   
+                }
+        }
+        .nav-third-one-bottom-left:hover .exagon{
+            fill:#fff;
+
+        }
+        .nav-third-one-bottom-left:hover .foreground {
+            stroke: #111;
         }
     }
+}
 
 //  <!-- 1.2右侧顶部导航栏 -->
 .nav-right{
@@ -193,8 +332,8 @@ nav{
                 top:28px;
             }
         }
-      
-    }
+    } 
+   
 //             <!-- 1.2.2右侧顶部导航栏功能 -->
     .nav-right-right{
         float: right;
@@ -213,7 +352,15 @@ nav{
         ul:hover{
             opacity:1;
         }
-  }
-}  
-  
+    }
+  }   
 
+// 2.主页轮播图
+.watch{
+    width: 100%;
+    // overflow: hidden;
+    list-style-type: none;
+    // position: relative;
+    margin-top: 94px;
+    width: 100%;
+}
