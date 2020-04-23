@@ -19,6 +19,13 @@ $(function () {
             width: 0
         }, 200)
     })
+    $('nav').on('mouseleave', function () {
+        $('.car-parameter').hide()
+        $('.car-menu').hide()
+        $(".service li").hide()
+        $(".car-menu-first").hide()
+        $(".nav-two ul").hide()
+    })
     //顶部c车型菜单栏菜单
     $(".car").on('mouseenter', function () {
         $(this).parent().parent().parent().stop().animate({
@@ -75,8 +82,7 @@ $(function () {
     })
     // 当鼠标移入车型一级下拉列表的第二个选项时，二级第一个列表出现,其他二级列表隐藏
     $('.car-menu-two').on('mouseenter', function () {
-        $('.car-menu-second').show();
-        $('.car-menu-second').siblings().hide();
+
         $(this).css({
             'opacity': 1
         })
@@ -89,6 +95,8 @@ $(function () {
         $(this).eq(firstLi).parent().parent().parent().stop().animate({
             'height': 370
         })
+        $('.car-menu-second').show();
+        $('.car-menu-second').siblings().hide();
         $('.nav-third-car').hide()
 
     })
@@ -163,8 +171,8 @@ $(function () {
         $('.nav-third-car ').animate({
             left: 30
         })
-        $('.car-parameter').show()
-        $(this).show()
+        // $('.car-parameter').show()
+        // $(this).show()
     })
     $('.car-menu-second li').on('mouseenter', function () {
 
@@ -177,8 +185,9 @@ $(function () {
         $(this).eq(firstLi).parent().parent().parent().parent().stop().animate({
             'height': 862
         })
-        $('.car-parameter').show()
+
     })
+
     $('.car-menu-third li').on('mouseenter', function () {
 
         $(this).eq(thirdLi).css({
@@ -202,52 +211,51 @@ $(function () {
         $('.car-parameter').show()
         $('.nav-third-one').siblings().fadeOut()
         $('.nav-third-one').fadeIn()
+        $('.nav-third-car').show()
     })
     $('.car-menu-first-two').on('mouseenter', function () {
+
         $('.car-parameter').show()
         $('.nav-third-two').siblings().fadeOut()
         $('.nav-third-two').fadeIn()
-
+        $('.nav-third-car').show()
     })
     $('.car-menu-first-three').on('mouseenter', function () {
         $('.car-parameter').show()
         $('.nav-third-three').siblings().fadeOut()
         $('.nav-third-three').fadeIn()
-
+        $('.nav-third-car').show()
     })
     $('.car-menu-first-four').on('mouseenter', function () {
         $('.car-parameter').show()
         $('.nav-third-four').siblings().fadeOut()
         $('.nav-third-four').fadeIn()
-
+        $('.nav-third-car').show()
     })
     $('.car-menu-second-one').on('mouseenter', function () {
-        $(this).parent().parent().next().show()
+        $('.car-parameter').show()
         $('.nav-third-five').siblings().fadeOut()
         $('.nav-third-five').fadeIn()
-
+        $('.nav-third-car').show()
     })
     $('.car-menu-second-two').on('mouseenter', function () {
-        $(this).parent().parent().next().show()
+        $('.car-parameter').show()
         $('.nav-third-six').siblings().fadeOut()
         $('.nav-third-six').fadeIn()
-
+        $('.nav-third-car').show()
     })
     $('.car-menu-second-three').on('mouseenter', function () {
-        $(this).parent().parent().next().show()
+        $('.car-parameter').show()
         $('.nav-third-seven').siblings().fadeOut()
         $('.nav-third-seven').fadeIn()
-
+        $('.nav-third-car').show()
     })
     $('.car-menu-three').on('mouseenter', function () {
+        $('.car-parameter').show()
         $('.nav-third-eight').siblings().fadeOut()
         $('.nav-third-eight').fadeIn()
-
+        $('.nav-third-car').show()
     })
-
-
-
-
 
     //   顶部导航栏移出效果
     $('nav').on('mouseleave', function () {
@@ -258,5 +266,110 @@ $(function () {
 })
 
 
+// 第二部分 轮播图
+// 定义变量
+var $num = 0;
+$('.slider ol li').eq(0).addClass('current')
+// 功能3：鼠标移入每个小圆点，对应的小圆点要添加current，而且上面的图也在跟着切换
 
+$('.slider ol li').on('click', function () {
+    // 获取当前的索引
+    var $index = $(this).index()
+    // 直接赋值给$num 
+    $num = $index
+    // 3.2 给当前的小圆点要添加current类名
+    $(this).addClass("current").siblings().removeClass('current')
+    // 3.3 上面的图也在跟着切换
+    $('.slider>ul li').eq($index).stop().fadeIn().siblings().stop().fadeOut()
+})
+// 功能3：鼠标移入每个小圆点，对应的小圆点要添加current，而且上面的图也在跟着切换
 
+// 3.1 先要给小圆点注册事件
+$('.slider ol li').on('click', function () {
+    // 获取当前的索引
+    var $index = $(this).index()
+    // 直接赋值给$num 
+    $num = $index
+    // 3.2 给当前的小圆点要添加current类名
+    $(this).addClass("current").siblings().removeClass('current')
+    // 3.3 上面的图也在跟着切换
+    $('.slider>ul li').eq($index).stop().fadeIn(2000).siblings().stop().fadeOut(2000)
+})
+
+// 功能四:点击右箭头，切换下一张图片，同时下面的小圆点也在跟着切换加类名
+
+// 4.1 获取右箭头，添加事件
+$('.arrow-right').on('click', function () {
+    // 4.2 切换下一张
+    $num++;
+    // 进行判断是不是最后一张
+    if ($num == $('.slider>ul li').length) {
+        $num = 0;
+    }
+    $('.slider>ul li').eq($num).stop().fadeIn(2000).siblings().stop().fadeOut(2000);
+    // 4.3 小圆点跟着切换
+    $('.slider ol li').eq($num).addClass("current").siblings().removeClass('current')
+
+})
+
+// 功能五:点击左箭头，切换上一张图片，同时下面的小圆点也在跟着切换加类名
+$('.arrow-left').on('click', function () {
+    // 5.1 $num--；
+    $num--;
+    // 判断
+    if ($num < 0) {
+        $num = $('.slider>ul li').length - 1;
+    }
+    //5.2 切换上一张图片
+    $('.slider>ul li').eq($num).stop().fadeIn(2000).siblings().stop().fadeOut(2000);
+    //5.3 下面的小圆点也在跟着切换加类名
+    $('.slider ol li').eq($num).addClass("current").siblings().removeClass('current')
+
+})
+// 功能六：自动轮播
+var timer = setInterval(function () {
+    $('.arrow-right').click()
+}, 10000)
+// 功能七： 移动到slider上面定时器删除
+$('.slider')
+    .on('mouseenter', function () {
+        // 移除定时器
+        clearInterval(timer)
+        // 显示
+
+    })
+    .on('mouseleave', function () {
+        timer = setInterval(function () {
+            $('.arrow-right').click()
+        }, 2000)
+        // 隐藏
+        $('.arrow').hide();
+    })
+//2.2轮播图上方文字从左向右以此淡出
+
+// function fade() {
+//     var options3 = {
+//         id: 'box3'
+//         , auto: false
+//     };
+//     var box3 = $('.box3');
+//     $('h1').show()
+//     box3.initReveal(options3);
+//     box3.performReveal(options3);
+// }
+// 六边形由内向外绽放函数
+// function big() {
+//     var wValue = $(this).find('.exagon').width() + 50;
+//     var hValue = $(this).find('.exagon').height() + 50;
+//     $(this).find('.exagon').animate({
+//         width: wValue,
+//         height: hValue,
+//         left: ("-" + (0.5 * $(this).find('.exagon').width()) / 2),
+//         top: ("-" + (0.5 * $(this).find('.exagon').height()) / 2)
+//     }, 1000);
+// }
+// function smoll() {
+//     ('.exagon').css({
+//         'height': 0
+//     })
+// }
