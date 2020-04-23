@@ -326,10 +326,11 @@ nav {
 }
 .slider {
   width: 100%;
-  box-sizing: border-box;
+  height: 970px;
 }
 .slider img {
-  width: 1900px;
+  width: 100%;
+  margin-top: -100px;
 }
 .slider .exagon {
   position: absolute;
@@ -337,41 +338,140 @@ nav {
   fill: transparent;
   stroke: #fff;
   left: 160px;
-  bottom: 280px;
+  bottom: 380px;
 }
 .slider ul {
   position: relative;
 }
 .slider ul li {
   position: absolute;
-  display: none;
 }
-.slider .container {
+.slider li:first-child .exagon {
+  position: absolute;
+  height: 72px;
+  fill: transparent;
+  stroke: #fff;
+  left: 157px;
+  bottom: 390px;
+}
+.slider li:first-child .exagon:hover {
+  fill: #ffffff;
+}
+.slider li:first-child .exagon:hover .foreground {
+  stroke: #111;
+}
+.slider li:first-child .smoll-big {
+  display: inline-block;
+  animation: six 1s;
+  transition: all 2s;
+  transform-origin: center;
+}
+@keyframes six {
+  0% {
+    transform: scale(0);
+    opacity: 0;
+  }
+  100% {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.slider li:first-child .upper {
   position: absolute;
   left: 157px;
-  bottom: 596px;
+  bottom: 600px;
 }
-.slider .container h1 {
+.slider li:first-child .upper div {
+  display: inline-block;
+  opacity: 0;
+  font-size: 24px;
   color: #fff;
+  font-weight: bolder;
 }
-.slider p {
+.slider li:first-child p {
   position: absolute;
-  left: 157px;
-  bottom: 370px;
+  left: 143px;
+  bottom: 496px;
   color: #fff;
   font-size: 108px;
   margin: 0;
   padding: 0;
   line-height: 100px;
+  font-weight: bolder;
 }
-.exagon:hover {
-  fill: #fff;
+.slider li:nth-child(2) .exagon {
+  position: absolute;
+  height: 72px;
+  fill: transparent;
+  stroke: #fff;
+  left: 157px;
+  bottom: 280px;
 }
-.exagon:hover .foreground {
+.slider li:nth-child(2) .exagon:hover {
+  fill: #ffffff;
+}
+.slider li:nth-child(2) .exagon:hover .foreground {
   stroke: #111;
 }
-.slider ul li:first-child {
-  display: block;
+.slider li:nth-child(2) .upper {
+  position: absolute;
+  left: 157px;
+  bottom: 720px;
+}
+.slider li:nth-child(2) .upper div {
+  display: inline-block;
+  opacity: 0;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bolder;
+}
+.slider li:nth-child(2) p {
+  position: absolute;
+  left: 143px;
+  bottom: 416px;
+  color: #fff;
+  font-size: 108px;
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  font-weight: bolder;
+}
+.slider li:nth-child(3) .exagon {
+  position: absolute;
+  height: 72px;
+  fill: transparent;
+  stroke: #fff;
+  left: 157px;
+  bottom: 300px;
+}
+.slider li:nth-child(3) .exagon:hover {
+  fill: #ffffff;
+}
+.slider li:nth-child(3) .exagon:hover .foreground {
+  stroke: #111;
+}
+.slider li:nth-child(3) .upper {
+  position: absolute;
+  left: 157px;
+  bottom: 620px;
+}
+.slider li:nth-child(3) .upper div {
+  display: inline-block;
+  opacity: 0;
+  font-size: 24px;
+  color: #fff;
+  font-weight: bolder;
+}
+.slider li:nth-child(3) p {
+  position: absolute;
+  left: 143px;
+  bottom: 410px;
+  color: #fff;
+  font-size: 108px;
+  margin: 0;
+  padding: 0;
+  line-height: 100px;
+  font-weight: bolder;
 }
 .arrow {
   display: none;
@@ -404,7 +504,7 @@ nav {
 }
 .slider ol {
   position: absolute;
-  left: 20px;
+  left: 90px;
   bottom: 20px;
 }
 .slider ol li {
@@ -420,5 +520,14 @@ nav {
 }
 .vehicle-type {
   width: 100%;
-  height: 10000px;
+  height: 1010px;
+  background-color: black;
+}
+.gutters {
+  width: 100%;
+  height: 635px;
+  position: relative;
+}
+.gutters li {
+  position: absolute;
 }

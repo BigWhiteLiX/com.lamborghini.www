@@ -293,7 +293,7 @@ $('.slider ol li').on('click', function () {
     // 3.2 给当前的小圆点要添加current类名
     $(this).addClass("current").siblings().removeClass('current')
     // 3.3 上面的图也在跟着切换
-    $('.slider>ul li').eq($index).stop().fadeIn(2000).siblings().stop().fadeOut(2000)
+    $('.slider>ul li').eq($index).stop().fadeIn().siblings().stop().fadeOut()
 })
 
 // 功能四:点击右箭头，切换下一张图片，同时下面的小圆点也在跟着切换加类名
@@ -302,30 +302,31 @@ $('.slider ol li').on('click', function () {
 $('.arrow-right').on('click', function () {
     // 4.2 切换下一张
     $num++;
+    var j = 0; // 用于计数
+    var timer
     // 进行判断是不是最后一张
     if ($num == $('.slider>ul li').length) {
         $num = 0;
     }
-    $('.slider>ul li').eq($num).stop().fadeIn(2000).siblings().stop().fadeOut(2000);
+    $('.slider>ul li').eq($num).stop().fadeIn().siblings().stop().fadeOut();
     // 4.3 小圆点跟着切换
     $('.slider ol li').eq($num).addClass("current").siblings().removeClass('current')
 
+    timer = setInterval(function show() {
+        $(".upper>div").eq(j).animate({
+            opacity: 1
+        }, 100, function () {
+            $('.slider a').addClass("smoll-big")
+        });
+
+        j++;
+        if (j == $(".upper>div").length) {
+            clearInterval(timer)
+        }
+    }, 200)
 })
 
-// 功能五:点击左箭头，切换上一张图片，同时下面的小圆点也在跟着切换加类名
-$('.arrow-left').on('click', function () {
-    // 5.1 $num--；
-    $num--;
-    // 判断
-    if ($num < 0) {
-        $num = $('.slider>ul li').length - 1;
-    }
-    //5.2 切换上一张图片
-    $('.slider>ul li').eq($num).stop().fadeIn(2000).siblings().stop().fadeOut(2000);
-    //5.3 下面的小圆点也在跟着切换加类名
-    $('.slider ol li').eq($num).addClass("current").siblings().removeClass('current')
 
-})
 // 功能六：自动轮播
 var timer = setInterval(function () {
     $('.arrow-right').click()
@@ -341,35 +342,6 @@ $('.slider')
     .on('mouseleave', function () {
         timer = setInterval(function () {
             $('.arrow-right').click()
-        }, 2000)
-        // 隐藏
-        $('.arrow').hide();
-    })
-//2.2轮播图上方文字从左向右以此淡出
+        }, 10000)
 
-// function fade() {
-//     var options3 = {
-//         id: 'box3'
-//         , auto: false
-//     };
-//     var box3 = $('.box3');
-//     $('h1').show()
-//     box3.initReveal(options3);
-//     box3.performReveal(options3);
-// }
-// 六边形由内向外绽放函数
-// function big() {
-//     var wValue = $(this).find('.exagon').width() + 50;
-//     var hValue = $(this).find('.exagon').height() + 50;
-//     $(this).find('.exagon').animate({
-//         width: wValue,
-//         height: hValue,
-//         left: ("-" + (0.5 * $(this).find('.exagon').width()) / 2),
-//         top: ("-" + (0.5 * $(this).find('.exagon').height()) / 2)
-//     }, 1000);
-// }
-// function smoll() {
-//     ('.exagon').css({
-//         'height': 0
-//     })
-// }
+    })
