@@ -1,0 +1,386 @@
+nav {
+  position: fixed;
+  top: 0;
+  height: 94px;
+  width: 100%;
+  background-color: #181818;
+  background-image: url("../img/logo.webp");
+  background-repeat: no-repeat;
+  background-position: 75px 18px;
+  padding-left: 167px;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.nav-left {
+  float: left;
+}
+.nav-left .car,
+.nav-left .service,
+.nav-left .match {
+  position: relative;
+  color: white;
+  float: left;
+  font-size: 18px;
+  margin-top: 35px;
+  margin-left: 33px;
+  cursor: pointer;
+  height: 18px;
+  z-index: 2;
+}
+.nav-left .car-bottom {
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  width: 0;
+  left: 0;
+  top: 25px;
+}
+.nav-left .car-menu {
+  display: none;
+  float: left;
+  margin-left: 30px;
+}
+.nav-left .car-menu li {
+  color: #ffffff;
+  margin: 38px 0;
+  font-size: 12px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.nav-left .service-menu {
+  display: none;
+  float: left;
+  margin-left: 100px;
+}
+.nav-left .service-menu li {
+  color: #ffffff;
+  margin: 38px 0;
+  font-size: 12px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.nav-left .service-menu li:hover {
+  opacity: 1;
+}
+.nav-left .car-menu-first {
+  position: absolute;
+  display: none;
+  left: 370px;
+  top: 57px;
+  z-index: 1;
+}
+.nav-left .car-menu-first li {
+  color: #ffffff;
+  margin: 36px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-left .car-menu-second {
+  position: absolute;
+  display: none;
+  left: 370px;
+  top: 57px;
+  z-index: 1;
+}
+.nav-left .car-menu-second li {
+  color: #ffffff;
+  margin: 36px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-left .car-menu-third {
+  position: absolute;
+  display: none;
+  left: 370px;
+  top: 57px;
+  z-index: 1;
+}
+.nav-left .car-menu-third li {
+  color: #ffffff;
+  margin: 36px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-left .car-menu-fourth {
+  position: absolute;
+  display: none;
+  left: 370px;
+  top: 57px;
+  z-index: 1;
+}
+.nav-left .car-menu-fourth li {
+  color: #ffffff;
+  margin: 36px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-third {
+  display: none;
+  position: absolute;
+  width: 1365px;
+  height: 778px;
+  left: 267px;
+}
+.nav-third .nav-third-car img {
+  width: 1350px;
+}
+.nav-third .nav-third-car .nav-third-one-top {
+  position: absolute;
+  right: 0;
+  top: 180px;
+  width: 543px;
+  height: 152px;
+  border: 1px solid #585858;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-top span {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.nav-third .nav-third-car .nav-third-one-top p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0 15px;
+}
+.nav-third .nav-third-car .nav-third-one-top .hexagon {
+  height: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-top .hexagon .exagon {
+  float: left;
+  height: 50px;
+  fill: transparent;
+  stroke: #fff;
+  margin-top: 50px;
+  margin-left: 88px;
+}
+.nav-third .nav-third-car .nav-third-one-top:hover .exagon {
+  fill: #fff;
+}
+.nav-third .nav-third-car .nav-third-one-top:hover .foreground {
+  stroke: #111;
+}
+.nav-third .nav-third-car .nav-third-one-center {
+  position: absolute;
+  right: 0;
+  top: 332px;
+  width: 543px;
+  height: 282px;
+  border: 1px solid #585858;
+  border-top: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-right {
+  position: absolute;
+  right: 0;
+  top: 614px;
+  width: 242px;
+  height: 152px;
+  border: 1px solid #585858;
+  border-top: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-right span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-right p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom {
+  position: absolute;
+  right: 242px;
+  top: 614px;
+  width: 301px;
+  height: 152px;
+  border: 1px solid #585858;
+  border-top: 0 ;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom {
+  position: absolute;
+  right: 543px;
+  top: 613px;
+  width: 406px;
+  height: 153px;
+  border: 1px solid #585858;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left {
+  position: absolute;
+  right: 949px;
+  top: 613px;
+  width: 372px;
+  height: 153px;
+  border: 1px solid #585858;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left span {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0 15px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left .hexagon {
+  height: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left .hexagon .exagon {
+  float: left;
+  height: 50px;
+  fill: transparent;
+  stroke: #fff;
+  margin-top: 50px;
+  margin-left: 88px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left:hover .exagon {
+  fill: #fff;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left:hover .foreground {
+  stroke: #111;
+}
+.nav-right {
+  float: right;
+  padding-right: 35px;
+}
+.nav-right .nav-right-left {
+  float: left;
+  margin-right: 35px;
+}
+.nav-right .nav-right-left a {
+  position: relative;
+  color: white;
+  line-height: 94px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+.nav-right .nav-right-left a .car-bottom {
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  width: 0;
+  left: 0;
+  top: 28px;
+}
+.nav-right .nav-right-right {
+  float: right;
+}
+.nav-right .nav-right-right .setUp,
+.nav-right .nav-right-right .chat,
+.nav-right .nav-right-right .search,
+.nav-right .nav-right-right .list {
+  float: left;
+  font-size: 30px;
+  color: white;
+  line-height: 94px;
+  margin-right: 35px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.nav-right .nav-right-right ul:hover {
+  opacity: 1;
+}
+.other {
+  height: 310px;
+  width: 100%;
+  background-color: #181818;
+  padding-top: 60px;
+}
+.other img {
+  float: left;
+  margin-left: 180px;
+  margin-right: 35px;
+  margin-bottom: 100px;
+}
+.other .other-left {
+  float: left;
+  position: relative;
+}
+.other .other-left li {
+  float: left;
+  margin: 0 15px;
+}
+.other .other-left li a {
+  color: #fff;
+}
+.other .car-bottom {
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  width: 0;
+  left: 0;
+  top: 25px;
+}
+.other .other-right {
+  float: right;
+  margin-right: 175px;
+}
+.other .other-right li {
+  float: left;
+  margin: 0 15px;
+}
+.other .other-right li a {
+  color: #fff;
+  font-size: 22px;
+}
+.other p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 45px;
+  line-height: 30px;
+}
+.last {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 28px;
+  color: #fff;
+  font-size: 12px;
+  background-color: #020202;
+  line-height: 28px ;
+  text-align: center;
+}
