@@ -1,6 +1,12 @@
 *{
 box-sizing: border-box;
 }
+/* 版心 */
+.container {
+    position: relative;
+    margin: 0 auto;
+    width: 1270px;
+}
 article,
 aside,
 details,

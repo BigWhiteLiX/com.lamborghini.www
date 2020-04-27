@@ -1,3 +1,5 @@
+
+
 // 1.顶部导航栏
 nav{
     position: fixed;
@@ -361,6 +363,7 @@ nav{
   .slider {
     width: 100%;
     height: 970px;
+    margin-top: 20px;
     img{
         width: 100%;
         margin-top: -100px;
@@ -377,17 +380,21 @@ nav{
         position: relative;
         li {
             position: absolute;
+            height: 1070px;
+            box-sizing: border-box;
           } 
     }
-
+  }
     .slider  li:first-child{
+        z-index: 1;
         .exagon{
         position: absolute;
         height: 72px;
         fill: transparent;
         stroke: #fff;
         left: 157px;
-        bottom: 390px;
+        bottom: 500px;
+ 
     }
     .exagon:hover {
         fill:#ffffff;
@@ -415,7 +422,7 @@ nav{
         .upper{
             position: absolute;
             left: 157px;
-            bottom: 600px;
+            bottom: 730px;
             div {
                 display: inline-block;
                 opacity: 0;
@@ -426,9 +433,10 @@ nav{
     
         }
         p{
-                position: absolute;
+                float: left;
+                position: relative;
                 left: 143px;
-                bottom: 496px;
+                bottom: 620px;
                  color: #fff;
                  font-size: 108px;
                  margin: 0;
@@ -446,7 +454,7 @@ nav{
     fill: transparent;
     stroke: #fff;
     left: 157px;
-    bottom: 280px;
+    bottom: 372px;
 }
 .exagon:hover {
     fill:#ffffff;
@@ -458,7 +466,7 @@ nav{
      .upper{
         position: absolute;
         left: 157px;
-        bottom: 720px;
+        bottom: 780px;
          div {
             display: inline-block;
             opacity: 0;
@@ -468,9 +476,10 @@ nav{
           }
     }
     p{
-            position: absolute;
+        float: left;
+        position: relative;
             left: 143px;
-            bottom: 416px;
+            bottom: 675px;
              color: #fff;
              font-size: 108px;
              margin: 0;
@@ -487,7 +496,7 @@ nav{
     fill: transparent;
     stroke: #fff;
     left: 157px;
-    bottom: 300px;
+    bottom: 350px;
     }
     .exagon:hover {
         fill:#ffffff;
@@ -499,7 +508,7 @@ nav{
     .upper{
         position: absolute;
         left: 157px;
-        bottom: 620px;
+        bottom: 670px;
          div {
             display: inline-block;
             opacity: 0;
@@ -509,9 +518,10 @@ nav{
           }
     }
     p{
-            position: absolute;
+        float: left;
+        position: relative;
             left: 143px;
-            bottom: 410px;
+            bottom: 560px;
              color: #fff;
              font-size: 108px;
              margin: 0;
@@ -521,12 +531,6 @@ nav{
         }
   
     } 
-
-    
-
-//   .slider ul li:first-child {
-//     display: block;
-//   }
 
   .arrow {
     display: none;
@@ -566,6 +570,7 @@ nav{
     position: absolute;
     left: 90px;
     bottom: 20px;
+    z-index: 2;
   }
 
   .slider ol li {
@@ -580,50 +585,68 @@ nav{
   .slider ol li.current {
     border-bottom: 2px solid #fff;
   }
+
+  
+
+
 //   <!-- 第三部分 -->
-//   <!-- 3.三种车型滑入滑出 -->
+//   <!-- 3.三种车型滑入滑出 -->   
 .vehicle-type{
-    width: 100%;
-    height: 1010px;
-    background-color: black;
-    // margin-top: 1000px;
+    height: 840px;
+    img{
+        width: 1903px;
+    }
+
 }
 
 
 // 第四部分  视频
 .gutters{
-    width: 100%;
+    width: 1903px;
     height: 635px;
     position: relative;
-    .exagon{
-        position: absolute;
-        height: 58px;
-        fill: transparent;
-        stroke: #fff;
-        left: 160px;
-        bottom: 380px;
+    box-sizing: border-box;
+    video{
+        width: 1903px;
     }
-    ul{
-        position: relative;
-        li {
-            position: absolute;
-          } 
+    img{
+        width: 1903px;
     }
 
-    .gutters li{
-        .exagon{
-        position: absolute;
-        height: 58px;
-        fill: transparent;
-        stroke: #fff;
-        left: 157px;
-        bottom: 280px;
-    }
-    .exagon:hover {
-        fill:#ffffff;
-    }
-    .exagon:hover .foreground {
-        stroke: #111;
+    .gutters-first{
+        position: relative;
+      
+        li {
+            position: absolute;
+            // display: none;
+            .exagon{
+                position: absolute;
+                height: 58px;
+                fill:transparent;
+                stroke: #111;
+                left: 157px;
+                bottom: 280px;
+            }
+            .exagon:hover {
+                fill:#111;
+            }
+            .exagon:hover .foreground {
+                stroke: #fff;
+            }
+            p{
+                position: absolute;
+                left: 160px;
+                bottom: 375px;
+                 color: #111111;
+                 font-size: 72px;
+                 margin: 0;
+                 padding: 0;
+                 line-height: 100px;
+                 font-weight: bolder;
+                 line-height: 72px;
+            }
+          } 
+
     }
     // .smoll-big{
     //     display: inline-block;
@@ -641,32 +664,353 @@ nav{
     //       transform: scale(1);
     //       opacity: 1;
     //     }
-      }
         .gutters-one{
             position: absolute;
-            left: 157px;
-            bottom: 600px;
+            left: 160px;
+            bottom: 530px;
             div {
                 display: inline-block;
-                opacity: 0;
+           
                 font-size: 24px;
-                color: #fff;
+                color: #111111;
                 font-weight: bolder;
               }
     
         }
-        p{
-                position: absolute;
-                left: 143px;
-                bottom: 496px;
-                 color: #fff;
-                 font-size: 108px;
-                 margin: 0;
-                 padding: 0;
-                 line-height: 100px;
-                 font-weight: bolder;
+        .gutters-second{
+            position: absolute;
+            bottom: 150px;
+            left: 127px;
+            li{
+                float: left;
+                font-size: 16px;
+                color: #111;
+                opacity: 0.2;
+                margin: 0 33px;
+                cursor:pointer;
             }
-         
-         
-    }    
-}
+            .gutters-second-one{
+                opacity: 1;
+            }
+
+        }
+
+        .gutters-third{
+            position: absolute;
+            bottom: 110px;
+            left: 127px;
+            .gutters-third-one{
+               position:  absolute;
+               left: 0;
+               bottom: 0;
+                height: 2px;
+                width: 139px;
+                background-color: #111;
+             
+            }
+            .gutters-third-two{
+                position:  absolute;
+                left: 139px;
+                bottom: 0;
+                height: 2px;
+                // width: 100px;
+                width: 0;
+                background-color: #111;
+             
+            }
+            .gutters-third-three{
+                position:  absolute;
+                left: 239px;
+                bottom: 0;
+                height: 2px;
+                // width: 125px;
+                width: 0;
+                background-color: #111;
+             
+            }
+        }
+        .gutters-fourse{
+            position: absolute;
+            bottom: 110px;
+            left: 127px;
+            width: 364px;
+            height:1px;
+            background-color: #b2b2b2;
+        }
+
+} 
+
+
+    // <!-- 第五部分 展厅 -->
+    .exhibition{
+        position: relative;
+        height: 630px;
+        background-image: url("../img/533702.jpg");
+        background-repeat: no-repeat;
+        background-position: 0 -260px;
+        span{
+            display: inline-block;
+            font-size: 28px;
+            color: #fff;
+            margin-top: 210px;
+            margin-left: 160px;
+        }
+        p{
+            font-size: 72px;
+            color: #fff;
+       
+            margin: 0;
+            margin-left: 160px;
+        }
+        .exagon{
+            position: absolute;
+            height: 56px;
+            fill: transparent;
+            stroke: #fff;
+            left: 160px;
+            bottom: 200px;
+        }
+        .exagon:hover {
+            fill:#ffffff;
+        }
+        .exagon:hover .foreground {
+            stroke: #111;
+        }
+
+    }
+
+    // <!-- 第六部分 文章 -->
+    .article{
+        .article-one{
+    h4{
+        color: 111;
+        font-size: 24px;
+        line-height: 0px;
+    }
+    h1{
+        color: #111;
+        font-size: 82px;
+        line-height: 30px;
+    }
+    img{
+        width: 100%;
+        height: 630px;
+    }
+    h5{
+        color: #111;
+        font-size: 16px;
+        line-height: 30px;
+    }
+    a{
+        font-size: 28px;
+        color: #111;
+        font-weight: bold;
+    }
+    span{
+        font-size: 16px;
+        color: #242424;
+        line-height: 1.8;
+        font-weight: lighter;
+    }
+    .article-box{
+        float:right;
+        border: 1px solid #d0d0d0;
+        box-sizing: border-box;
+        height: 52px;
+        width: 215px;
+        color: #111;
+        text-align: center;
+        line-height: 52px;
+        margin-bottom: 50px;
+    }
+    .article-box:hover{
+        background-color: #111;
+        color: #fff;
+        border: 1px solid #111;
+    }
+    }
+    .article-two{
+       overflow: hidden;
+       margin-top: 60px;
+    .article-img{
+        float: left;
+        height: 260px;
+        width: 634px;
+        background-image: url("../img/04_14_cover_m.webp");
+        background-size: 100%;
+        background-position: 0px -50px;
+     }
+     h5{
+         float: left;
+        color: #202020;
+        font-size: 14px;
+         margin: 0;
+        font-weight: lighter;
+        margin-left: 40px;
+
+    }
+    a{
+        float: right;
+        font-size:28px ;
+        color: #111;
+        font-weight: bold;
+        margin-top: 28px;
+        margin-right: 110px;
+    }
+    .article-box{
+        float:right;
+        border: 1px solid #d0d0d0;
+        box-sizing: border-box;
+        height: 52px;
+        width: 215px;
+        color: #111;
+        text-align: center;
+        line-height: 52px;
+        margin-right: 380px;
+        margin-top: 50px;
+    }
+    .article-box:hover{
+        background-color: #111;
+        color: #fff;
+        border: 1px solid #111;
+    }
+    }
+
+    .article-three{
+        overflow: hidden;
+        margin-top: 60px;
+     .article-img{
+         float: left;
+         height: 260px;
+         width: 634px;
+         background-image: url("../img/Cover Supreme_unica.jpg");
+         background-size: 100%;
+         background-position: 0px -50px;
+      }
+      h5{
+          float: left;
+         color: #202020;
+         font-size: 14px;
+          margin: 0;
+         font-weight: lighter;
+         margin-left: 40px;
+ 
+     }
+     a{
+         float: right;
+         font-size:28px ;
+         color: #111;
+         font-weight: bold;
+         margin-top: 28px;
+         margin-right: 72px;
+     }
+     .article-box{
+         float:right;
+         border: 1px solid #d0d0d0;
+         box-sizing: border-box;
+         height: 52px;
+         width: 215px;
+         color: #111;
+         text-align: center;
+         line-height: 52px;
+         margin-right: 380px;
+         margin-top: 50px;
+     }
+     .article-box:hover{
+         background-color: #111;
+         color: #fff;
+         border: 1px solid #111;
+     }
+     }
+     .article-bottom{
+        box-sizing: border-box;
+        border: 1px solid #202020;
+        background-color: #202020;
+        height: 52px;
+        width: 215px;
+        color: #fff;
+        text-align: center;
+        line-height: 52px;
+       margin: 50px auto;
+       cursor:pointer;
+       a{
+        color: #fff;
+       }
+    }
+    .article-bottom:hover{
+        background-color: #fff;
+        color: #202020;
+    }
+    .article-bottom:hover a{
+        color: #202020;
+    }
+  }
+
+
+
+    // <!-- 第七部分 其他 -->
+    .other{
+      
+        height: 310px;
+        width: 100%;
+        background-color: #181818;
+        padding-top: 60px;
+        img{
+            float: left;
+            margin-left: 180px;
+            margin-right: 35px;
+            margin-bottom: 100px;
+        
+        }
+        .other-left{
+            float: left;
+            position: relative;
+            // margin-left: 180px;
+            li{
+                float: left;
+                margin: 0 15px;
+                a{
+                color: #fff;
+            }
+            }
+        }
+        .car-bottom{
+            position: absolute;
+            background-color: white;
+            height: 1px;
+            width: 0;
+            left:0;
+            top:25px;
+        }
+        .other-right{
+            float: right;
+            margin-right: 175px;
+            li{
+                float: left;
+                margin: 0 15px;
+
+            a{
+                color: #fff;
+                font-size: 22px;
+            }
+        }
+        }
+        p{
+            font-size: 16px;
+            color: #fff;
+            margin-top: 45px;
+           line-height: 30px;
+        }
+    }
+    //    <!-- 第八部分 末尾固定定位 -->
+    .last{
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+        height: 28px;
+        color: #fff;
+        font-size: 12px;
+        background-color: #020202;
+        line-height:28px ;
+        text-align: center;
+    }

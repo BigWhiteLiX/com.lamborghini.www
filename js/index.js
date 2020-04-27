@@ -263,89 +263,165 @@ $(function () {
             'height': 94
         })
     })
-})
 
 
-// 第二部分 轮播图
-// 定义变量
-var $num = 0;
-$('.slider ol li').eq(0).addClass('current')
-// 功能3：鼠标移入每个小圆点，对应的小圆点要添加current，而且上面的图也在跟着切换
 
-$('.slider ol li').on('click', function () {
-    // 获取当前的索引
-    var $index = $(this).index()
-    // 直接赋值给$num 
-    $num = $index
-    // 3.2 给当前的小圆点要添加current类名
-    $(this).addClass("current").siblings().removeClass('current')
-    // 3.3 上面的图也在跟着切换
-    $('.slider>ul li').eq($index).stop().fadeIn().siblings().stop().fadeOut()
-})
-// 功能3：鼠标移入每个小圆点，对应的小圆点要添加current，而且上面的图也在跟着切换
+    // 第二部分 轮播图
+    // 定义变量
+    var $num = 0;
+    $('.slider ol li').eq(0).addClass('current')
+    // 功能3：鼠标移入每个小圆点，对应的小圆点要添加current，而且上面的图也在跟着切换
 
-// 3.1 先要给小圆点注册事件
-$('.slider ol li').on('click', function () {
-    // 获取当前的索引
-    var $index = $(this).index()
-    // 直接赋值给$num 
-    $num = $index
-    // 3.2 给当前的小圆点要添加current类名
-    $(this).addClass("current").siblings().removeClass('current')
-    // 3.3 上面的图也在跟着切换
-    $('.slider>ul li').eq($index).stop().fadeIn().siblings().stop().fadeOut()
-})
+    $('.slider ol li').on('click', function () {
+        // 获取当前的索引
+        var $index = $(this).index()
+        // 直接赋值给$num 
+        $num = $index
+        // 3.2 给当前的小圆点要添加current类名
+        $(this).addClass("current").siblings().removeClass('current')
+        // 3.3 上面的图也在跟着切换
+        $('.slider>ul li').eq($index).stop().fadeIn().siblings().stop().fadeOut()
+    })
+    // 功能3：鼠标移入每个小圆点，对应的小圆点要添加current，而且上面的图也在跟着切换
 
-// 功能四:点击右箭头，切换下一张图片，同时下面的小圆点也在跟着切换加类名
+    // 3.1 先要给小圆点注册事件
+    $('.slider ol li').on('click', function () {
+        // 获取当前的索引
+        var $index = $(this).index()
+        // 直接赋值给$num 
+        $num = $index
+        // 3.2 给当前的小圆点要添加current类名
+        $(this).addClass("current").siblings().removeClass('current')
+        // 3.3 上面的图也在跟着切换
+        $('.slider>ul li').eq($index).stop().fadeIn().siblings().stop().fadeOut()
+    })
 
-// 4.1 获取右箭头，添加事件
-$('.arrow-right').on('click', function () {
-    // 4.2 切换下一张
-    $num++;
-    var j = 0; // 用于计数
-    var timer
-    // 进行判断是不是最后一张
-    if ($num == $('.slider>ul li').length) {
-        $num = 0;
-    }
-    $('.slider>ul li').eq($num).stop().fadeIn().siblings().stop().fadeOut();
-    // 4.3 小圆点跟着切换
-    $('.slider ol li').eq($num).addClass("current").siblings().removeClass('current')
+    // 功能四:点击右箭头，切换下一张图片，同时下面的小圆点也在跟着切换加类名
 
-    timer = setInterval(function show() {
-        $(".upper>div").eq(j).animate({
-            opacity: 1
-        }, 100, function () {
-            $('.slider a').addClass("smoll-big")
-        });
-
-        j++;
-        if (j == $(".upper>div").length) {
-            clearInterval(timer)
+    // 4.1 获取右箭头，添加事件
+    $('.arrow-right').on('click', function () {
+        // 4.2 切换下一张
+        $num++;
+        var j = 0; // 用于计数
+        var timer
+        // 进行判断是不是最后一张
+        if ($num == $('.slider>ul li').length) {
+            $num = 0;
         }
-    }, 200)
-})
+        $('.slider>ul li').eq($num).stop().fadeIn().siblings().stop().fadeOut();
+        // 4.3 小圆点跟着切换
+        $('.slider ol li').eq($num).addClass("current").siblings().removeClass('current')
+        $('.slider ol li p').animate({
+            'left': 0,
+            'opacity': 1
+        })
+        timer = setInterval(function show() {
+            $(".upper>div").eq(j).animate({
+                opacity: 1
+            }, 100, function () {
+                $('.slider a').addClass("smoll-big")
+            });
+
+            j++;
+            if (j == $(".upper>div").length) {
+                clearInterval(timer)
+            }
+        }, 200)
+    })
 
 
-// 功能六：自动轮播
-var timer = setInterval(function () {
-    $('.arrow-right').click()
-}, 10000)
-// 功能七： 移动到slider上面定时器删除
-$('.slider')
-    .on('mouseenter', function () {
+    // 功能六：自动轮播
+    var timer = setInterval(function () {
+        $('.arrow-right').click()
+    }, 10000)
+    // 功能七： 移动到slider上面定时器删除
+    $('.slider').on('mouseenter', function () {
         // 移除定时器
         clearInterval(timer)
         // 显示
 
     })
-    .on('mouseleave', function () {
-        timer = setInterval(function () {
-            $('.arrow-right').click()
-        }, 10000)
+        .on('mouseleave', function () {
+            timer = setInterval(function () {
+                $('.arrow-right').click()
+            }, 10000)
+        })
 
-    })
+
+
+
+
 
 
 
     // 第四部分
+    // 鼠标点击事件
+    $('.gutters-second-one').on('click', function () {
+        $(this).animate({
+            'opacity': 1
+        })
+        $(this).siblings().animate({
+            'opacity': 0.2
+        })
+        $(this).parent().next().find('.gutters-third-one').animate({
+            'width': 139
+        })
+        $(this).parent().next().find('.gutters-third-one').siblings().animate({
+            'width': 0
+        })
+        $(this).siblings().animate({
+            'opacity': 0.2
+        })
+        // 3.3 上面的图也在跟着切换
+        $('.gutters-first-three').fadeIn()
+        $('.gutters-first-three').siblings().fadeOut()
+
+    })
+    $('.gutters-second-two').on('click', function () {
+        $(this).animate({
+            'opacity': 1
+        })
+        $(this).siblings().animate({
+            'opacity': 0.2
+        })
+        $(this).parent().next().find('.gutters-third-two').animate({
+            'width': 100
+        })
+        $(this).parent().next().find('.gutters-third-two').siblings().animate({
+            'width': 0
+        })
+        // 3.3 上面的图也在跟着切换
+        $('.gutters-first-two').fadeIn()
+        $('.gutters-first-two').siblings().fadeOut()
+    })
+    $('.gutters-second-three').on('click', function () {
+        $(this).animate({
+            'opacity': 1
+        })
+        $(this).siblings().animate({
+            'opacity': 0.2
+        })
+        $(this).parent().next().find('.gutters-third-three').animate({
+            'width': 125
+        })
+        $(this).parent().next().find('.gutters-third-three').siblings().animate({
+            'width': 0
+        })
+        // 3.3 上面的图也在跟着切换
+        $('.gutters-first-one').fadeIn()
+        $('.gutters-first-one').siblings().fadeOut()
+    })
+
+    // <!-- 第六部分 其他 -->
+    $('.other-left li').on('mouseenter', function () {
+        $(this).children().eq(1).stop().animate({
+            width: '100%'
+        }, 200)
+    })
+    $('.other-left li').on('mouseleave', function () {
+        $(this).children().eq(1).stop().animate({
+            width: 0
+        }, 200)
+    })
+
+}) 
