@@ -285,7 +285,10 @@ $(function () {
     // 功能3：鼠标移入每个小圆点，对应的小圆点要添加current，而且上面的图也在跟着切换
 
     // 3.1 先要给小圆点注册事件
+
     $('.slider ol li').on('click', function () {
+        $(".slider>ul li").find('.upper>div').css('opacity', 0)
+        clearInterval(t)
         // 获取当前的索引
         var $index = $(this).index()
         // 直接赋值给$num 
@@ -293,47 +296,84 @@ $(function () {
         // 3.2 给当前的小圆点要添加current类名
         $(this).addClass("current").siblings().removeClass('current')
         // 3.3 上面的图也在跟着切换
+        var j = 0; // 用于计数
+
+        var t
         $('.slider>ul li').eq($index).stop().fadeIn().siblings().stop().fadeOut()
+        function show() {
+            $(".slider>ul li").eq($num).find('.upper>div').eq(j).animate({
+                opacity: 1
+            }, 100);
+
+            j++;
+            // console.log($(".slider>ul li").eq($num).find('.upper>div').length)
+            if (j == $(".slider>ul li").eq($num).find('.upper>div').length) {
+                clearInterval(t)
+
+            }
+        }
+        t = setInterval(show, 50)
+        // console.log(j)
+
     })
 
     // 功能四:点击右箭头，切换下一张图片，同时下面的小圆点也在跟着切换加类名
-
     // 4.1 获取右箭头，添加事件
     $('.arrow-right').on('click', function () {
+
+        $(".slider>ul li").find('.upper>div').css('opacity', 0)
         // 4.2 切换下一张
         $num++;
-        var j = 0; // 用于计数
-        var timer
         // 进行判断是不是最后一张
         if ($num == $('.slider>ul li').length) {
             $num = 0;
         }
-        $('.slider>ul li').eq($num).stop().fadeIn().siblings().stop().fadeOut();
+        $('.slider>ul li').eq($num).stop().fadeIn(1000).siblings().stop().fadeOut(1000);
         // 4.3 小圆点跟着切换
         $('.slider ol li').eq($num).addClass("current").siblings().removeClass('current')
-        $('.slider ol li p').animate({
-            'left': 0,
-            'opacity': 1
-        })
-        timer = setInterval(function show() {
-            $(".upper>div").eq(j).animate({
+
+        // 让文字一个一个出来
+
+        var j = 0; // 用于计数
+        var t
+        function show() {
+            $(".slider>ul li").eq($num).find('.upper>div').eq(j).animate({
                 opacity: 1
-            }, 100, function () {
-                $('.slider a').addClass("smoll-big")
-            });
+            }, 100);
 
             j++;
-            if (j == $(".upper>div").length) {
-                clearInterval(timer)
+            if (j == $(".slider>ul li").eq($num).find('.upper>div').length) {
+                clearInterval(t)
             }
-        }, 200)
+        }
+
+
+        t = setInterval(show, 200)
+        $('.slider>ul li').eq($num).find('a').css({
+            'transform': 'scale(1)',
+            'opacity': 1
+        })
+        // console.log(($('.slider>ul li').eq($num).find('a'))[0])
     })
 
+    var j = 0; // 用于计数
+    var t
+    function show() {
+        $(".slider>ul li").eq($num).find('.upper>div').eq(j).animate({
+            opacity: 1
+        }, 100);
 
+        j++;
+        if (j == $(".slider>ul li").eq($num).find('.upper>div').length) {
+            clearInterval(t)
+        }
+    }
+
+    t = setInterval(show, 200)
     // 功能六：自动轮播
     var timer = setInterval(function () {
         $('.arrow-right').click()
-    }, 10000)
+    }, 8000)
     // 功能七： 移动到slider上面定时器删除
     $('.slider').on('mouseenter', function () {
         // 移除定时器
@@ -344,8 +384,9 @@ $(function () {
         .on('mouseleave', function () {
             timer = setInterval(function () {
                 $('.arrow-right').click()
-            }, 10000)
+            }, 6000)
         })
+
 
 
 

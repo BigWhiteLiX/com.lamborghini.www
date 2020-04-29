@@ -360,178 +360,102 @@ nav{
   }   
 
 // 2.主页轮播图
-  .slider {
+// 2.主页轮播图
+.slider {
     width: 100%;
     height: 970px;
     margin-top: 20px;
+    position: relative;
     img{
         width: 100%;
         margin-top: -100px;
     }
-    .exagon{
-        position: absolute;
-        height: 72px;
-        fill: transparent;
-        stroke: #fff;
-        left: 160px;
-        bottom: 380px;
-    }
     ul{
-        position: relative;
+       
         li {
             position: absolute;
             height: 1070px;
             box-sizing: border-box;
+          
           } 
     }
-  }
-    .slider  li:first-child{
-        z-index: 1;
-        .exagon{
-        position: absolute;
+      // 轮播图左边文字
+    .smoll-big{
+    display: inline-block;
+    animation: six 1s;
+    transition: all 2s;
+    transform-origin: center;
+      }
+  .slider-word{
+    position: absolute;
+    bottom: 575px;
+    left:150px;
+    .upper{
+    margin-bottom: 50px;
+      div{
+        float: left;
+        color: #fff;
+        opacity: 0;
+        font-size:24px ;
+        font-weight: bolder;
+      }
+    }
+      .exagon{
         height: 72px;
         fill: transparent;
         stroke: #fff;
-        left: 157px;
-        bottom: 500px;
- 
-    }
-    .exagon:hover {
-        fill:#ffffff;
-    }
-    .exagon:hover .foreground {
-        stroke: #111;
-    }
-    .smoll-big{
-        display: inline-block;
-        animation: six 1s;
+      }
+      a{
+        height: 72px;
+        width: 63px;
+        display:block;
+        // transform: scale(0);
+        opacity: 1;
         transition: all 2s;
         transform-origin: center;
       }
-      @keyframes six {
-        0% {
-          transform: scale(0);
-          opacity: 0;
-        }
-  
-        100% {
-          transform: scale(1);
-          opacity: 1;
-        }
-      }
-        .upper{
-            position: absolute;
-            left: 157px;
-            bottom: 730px;
-            div {
-                display: inline-block;
-                opacity: 0;
-                font-size: 24px;
-                color: #fff;
-                font-weight: bolder;
-              }
-    
-        }
-        p{
-                float: left;
-                position: relative;
-                left: 143px;
-                bottom: 620px;
-                 color: #fff;
-                 font-size: 108px;
-                 margin: 0;
-                 padding: 0;
-                 line-height: 100px;
-                 font-weight: bolder;
-            }
-         
-         
-    }    
-    .slider  li:nth-child(2){
-        .exagon{
-    position: absolute;
-    height: 72px;
-    fill: transparent;
-    stroke: #fff;
-    left: 157px;
-    bottom: 372px;
-}
-.exagon:hover {
-    fill:#ffffff;
-
-}
-.exagon:hover .foreground {
-    stroke: #111;
-}   
-     .upper{
-        position: absolute;
-        left: 157px;
-        bottom: 780px;
-         div {
-            display: inline-block;
-            opacity: 0;
-            font-size: 24px;
-            color: #fff;
-            font-weight: bolder;
-          }
-    }
-    p{
-        float: left;
-        position: relative;
-            left: 143px;
-            bottom: 675px;
-             color: #fff;
-             font-size: 108px;
-             margin: 0;
-             padding: 0;
-             line-height: 100px;
-             font-weight: bolder;
-        }    
-   
-      } 
-      .slider li:nth-child(3){
-        .exagon{
-    position: absolute;
-    height: 72px;
-    fill: transparent;
-    stroke: #fff;
-    left: 157px;
-    bottom: 350px;
-    }
-    .exagon:hover {
+      .exagon:hover {
         fill:#ffffff;
-    
-    }
-    .exagon:hover .foreground {
+      }
+      .exagon:hover .foreground {
         stroke: #111;
-    }   
-    .upper{
-        position: absolute;
-        left: 157px;
-        bottom: 670px;
-         div {
-            display: inline-block;
-            opacity: 0;
-            font-size: 24px;
-            color: #fff;
-            font-weight: bolder;
-          }
-    }
-    p{
-        float: left;
+      }
+      p{
         position: relative;
-            left: 143px;
-            bottom: 560px;
-             color: #fff;
-             font-size: 108px;
-             margin: 0;
-             padding: 0;
-             line-height: 100px;
-             font-weight: bolder;
+        color: #fff;
+        font-size: 108px;
+        margin: 0;
+        padding: 0;
+        line-height: 100px;
+        font-weight: bolder;
+        margin-bottom: 40px;
+        }  
+    }
+}
+
+
+  
+
+//   第一张
+    .slider li:first-child{
+        z-index: 1;
+    }
+
+    
+    // 第二张
+    .slider li:nth-child(2){
+        .slider-word{
+            bottom:440px;
         }
+    }
+    // //   第三张
+      .slider li:nth-child(3){
+        .slider-word{
+        bottom: 400px;
+      } 
   
     } 
-
+// 小圆点和箭头
   .arrow {
     display: none;
   }
@@ -569,7 +493,7 @@ nav{
   .slider ol {
     position: absolute;
     left: 90px;
-    bottom: 20px;
+    bottom: 110px;
     z-index: 2;
   }
 
@@ -586,7 +510,6 @@ nav{
     border-bottom: 2px solid #fff;
   }
 
-  
 
 
 //   <!-- 第三部分 -->
