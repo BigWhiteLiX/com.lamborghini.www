@@ -1,0 +1,729 @@
+nav {
+  position: fixed;
+  top: 0;
+  height: 94px;
+  width: 100%;
+  background-color: #181818;
+  background-image: url("../img/logo.webp");
+  background-repeat: no-repeat;
+  background-position: 75px 18px;
+  padding-left: 167px;
+  overflow: hidden;
+  box-sizing: border-box;
+  z-index: 10;
+}
+.nav-left {
+  float: left;
+}
+.nav-left .car,
+.nav-left .service,
+.nav-left .match {
+  position: relative;
+  color: white;
+  float: left;
+  font-size: 18px;
+  margin-top: 35px;
+  margin-left: 33px;
+  cursor: pointer;
+  height: 18px;
+  z-index: 2;
+}
+.nav-left .car-bottom {
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  width: 0;
+  left: 0;
+  top: 25px;
+}
+.nav-left .car-menu {
+  display: none;
+  float: left;
+  margin-left: 30px;
+}
+.nav-left .car-menu li {
+  color: #ffffff;
+  margin: 38px 0;
+  font-size: 12px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.nav-left .service-menu {
+  display: none;
+  float: left;
+  margin-left: 100px;
+}
+.nav-left .service-menu li {
+  color: #ffffff;
+  margin: 38px 0;
+  font-size: 12px;
+  opacity: 0.5;
+  cursor: pointer;
+}
+.nav-left .service-menu li:hover {
+  opacity: 1;
+}
+.nav-left .car-menu-first {
+  position: absolute;
+  display: none;
+  left: 370px;
+  top: 57px;
+  z-index: 1;
+}
+.nav-left .car-menu-first li {
+  color: #ffffff;
+  margin: 36px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-left .car-menu-second {
+  position: absolute;
+  display: none;
+  left: 370px;
+  top: 57px;
+  z-index: 1;
+}
+.nav-left .car-menu-second li {
+  color: #ffffff;
+  margin: 36px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-left .car-menu-third {
+  position: absolute;
+  display: none;
+  left: 370px;
+  top: 57px;
+  z-index: 1;
+}
+.nav-left .car-menu-third li {
+  color: #ffffff;
+  margin: 36px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-left .car-menu-fourth {
+  position: absolute;
+  display: none;
+  left: 370px;
+  top: 57px;
+  z-index: 1;
+}
+.nav-left .car-menu-fourth li {
+  color: #ffffff;
+  margin: 36px 0;
+  font-size: 12px;
+  cursor: pointer;
+}
+.nav-third {
+  display: none;
+  position: absolute;
+  width: 1365px;
+  height: 778px;
+  left: 267px;
+}
+.nav-third .nav-third-car img {
+  width: 1350px;
+}
+.nav-third .nav-third-car .nav-third-one-top {
+  position: absolute;
+  right: 0;
+  top: 180px;
+  width: 543px;
+  height: 152px;
+  border: 1px solid #585858;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-top span {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.nav-third .nav-third-car .nav-third-one-top p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0 15px;
+}
+.nav-third .nav-third-car .nav-third-one-top .hexagon {
+  height: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-top .hexagon .exagon {
+  float: left;
+  height: 50px;
+  fill: transparent;
+  stroke: #fff;
+  margin-top: 50px;
+  margin-left: 88px;
+}
+.nav-third .nav-third-car .nav-third-one-top:hover .exagon {
+  fill: #fff;
+}
+.nav-third .nav-third-car .nav-third-one-top:hover .foreground {
+  stroke: #111;
+}
+.nav-third .nav-third-car .nav-third-one-center {
+  position: absolute;
+  right: 0;
+  top: 332px;
+  width: 543px;
+  height: 282px;
+  border: 1px solid #585858;
+  border-top: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-right {
+  position: absolute;
+  right: 0;
+  top: 614px;
+  width: 242px;
+  height: 152px;
+  border: 1px solid #585858;
+  border-top: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-right span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-right p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom {
+  position: absolute;
+  right: 242px;
+  top: 614px;
+  width: 301px;
+  height: 152px;
+  border: 1px solid #585858;
+  border-top: 0 ;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-bottom p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom {
+  position: absolute;
+  right: 543px;
+  top: 613px;
+  width: 406px;
+  height: 153px;
+  border: 1px solid #585858;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom span {
+  display: inline-block;
+  color: #fff;
+  margin-left: 80px;
+  font-size: 14px;
+  margin-top: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left-bottom p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0;
+  margin-left: 80px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left {
+  position: absolute;
+  right: 949px;
+  top: 613px;
+  width: 372px;
+  height: 153px;
+  border: 1px solid #585858;
+  border-right: 0 ;
+  box-sizing: border-box;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left span {
+  color: #fff;
+  margin-left: 15px;
+  font-size: 14px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left p {
+  float: left;
+  font-size: 34px;
+  color: #ffffff;
+  margin: 0 15px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left .hexagon {
+  height: 50px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left .hexagon .exagon {
+  float: left;
+  height: 50px;
+  fill: transparent;
+  stroke: #fff;
+  margin-top: 50px;
+  margin-left: 88px;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left:hover .exagon {
+  fill: #fff;
+}
+.nav-third .nav-third-car .nav-third-one-bottom-left:hover .foreground {
+  stroke: #111;
+}
+.nav-right {
+  float: right;
+  padding-right: 35px;
+}
+.nav-right .nav-right-left {
+  float: left;
+  margin-right: 35px;
+}
+.nav-right .nav-right-left a {
+  position: relative;
+  color: white;
+  line-height: 94px;
+  margin-right: 35px;
+  cursor: pointer;
+}
+.nav-right .nav-right-left a .car-bottom {
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  width: 0;
+  left: 0;
+  top: 28px;
+}
+.nav-right .nav-right-right {
+  float: right;
+}
+.nav-right .nav-right-right .setUp,
+.nav-right .nav-right-right .chat,
+.nav-right .nav-right-right .search,
+.nav-right .nav-right-right .list {
+  float: left;
+  font-size: 30px;
+  color: white;
+  line-height: 94px;
+  margin-right: 35px;
+  cursor: pointer;
+  opacity: 0.7;
+}
+.nav-right .nav-right-right ul:hover {
+  opacity: 1;
+}
+.article {
+  margin-top: 190px ;
+}
+.article .article-box {
+  position: absolute;
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  height: 52px;
+  width: 215px;
+  color: #111;
+  text-align: center;
+  line-height: 52px;
+  bottom: 0;
+  right: 380px;
+}
+.article .article-box:hover {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #111;
+}
+.article .article-one h6 {
+  color: #111;
+  font-size: 12px;
+  line-height: 0px;
+  font-weight: normal;
+}
+.article .article-one h6 span {
+  font-size: 12px;
+  font-weight: bold;
+}
+.article .article-one h4 {
+  color: #111;
+  font-size: 26px;
+  line-height: 0px;
+}
+.article .article-one h1 {
+  color: #111;
+  font-size: 102px;
+  line-height: 30px;
+}
+.article .article-one img {
+  width: 100%;
+  height: 630px;
+}
+.article .article-one h5 {
+  color: #111;
+  font-size: 16px;
+  line-height: 30px;
+}
+.article .article-one a {
+  font-size: 28px;
+  color: #111;
+  font-weight: bold;
+}
+.article .article-one span {
+  font-size: 16px;
+  color: #242424;
+  line-height: 1.8;
+  font-weight: lighter;
+}
+.article .article-one .article-box {
+  float: right;
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  height: 52px;
+  width: 215px;
+  color: #111;
+  text-align: center;
+  line-height: 52px;
+  margin-bottom: 50px;
+}
+.article .article-one .article-box:hover {
+  background-color: #111;
+  color: #fff;
+  border: 1px solid #111;
+}
+.article .article-two {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-two .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/cover_m_Lamborghini upholstery workers producing surgical masks for S. Orsola Hospital.webp");
+  background-size: 100%;
+}
+.article .article-two h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-two a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 15px;
+  margin-right: 75px;
+}
+.article .article-three {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-three .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/ala_2_cover.webp");
+  background-size: 100%;
+  background-position: 0px -50px;
+}
+.article .article-three h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-three a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 70px;
+  margin-right: 227px;
+}
+.article .article-four {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-four .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/cover_Stefano-Domenicali-the-factory.webp");
+  background-size: 100%;
+}
+.article .article-four h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-four a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 42px;
+  margin-right: 15px;
+}
+.article .article-five {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-five .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/11_03_cover_m.jpg");
+  background-size: 100%;
+  background-position: 0 -100px;
+}
+.article .article-five h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-five a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 54px;
+  margin-right: 54px;
+}
+.article .article-six {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-six .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/miura_news_cover_M.webp");
+  background-size: 100%;
+  background-position: 0 -100px;
+}
+.article .article-six h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-six a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 54px;
+  margin-right: 39px;
+}
+.article .article-seven {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-seven .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/COVER_OG_2.jpg");
+  background-size: 100%;
+  background-position: 0 -100px;
+}
+.article .article-seven h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-seven a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 54px;
+  margin-right: 39px;
+}
+.article .article-nine {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-nine .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/Marri_01_OG.webp");
+  background-size: 100%;
+  background-position: 0 -70px;
+}
+.article .article-nine h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-nine a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 61px;
+  margin-right: 93px;
+}
+.article .article-ten {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-ten .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/cover_urus.webp");
+  background-size: 100%;
+}
+.article .article-ten h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-ten a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 61px;
+  margin-right: 93px;
+}
+.article .article-eleven {
+  position: relative;
+  overflow: hidden;
+  margin-top: 60px;
+}
+.article .article-eleven .article-img {
+  float: left;
+  height: 260px;
+  width: 634px;
+  background-image: url("../img/COVER_JPrice_AspenAccademia2020-3249.jpg");
+  background-size: 100%;
+  background-position: 0 -70px;
+}
+.article .article-eleven h5 {
+  float: left;
+  color: #202020;
+  font-size: 14px;
+  margin: 0;
+  font-weight: lighter;
+  margin-left: 40px;
+}
+.article .article-eleven a {
+  float: right;
+  font-size: 28px ;
+  color: #111;
+  font-weight: bold;
+  margin-top: 61px;
+  margin-right: 126px;
+}
+.article-more {
+  border: 1px solid #d0d0d0;
+  box-sizing: border-box;
+  height: 52px;
+  width: 215px;
+  text-align: center;
+  margin-bottom: 50px;
+  margin: 40px auto;
+}
+.article-more a {
+  line-height: 52px;
+  color: #111;
+}
+.article-more:hover {
+  background-color: #111;
+  border: 1px solid #111;
+}
+.article-more:hover a {
+  color: #fff;
+}
+.other {
+  height: 310px;
+  width: 100%;
+  background-color: #181818;
+  padding-top: 60px;
+}
+.other img {
+  float: left;
+  margin-left: 180px;
+  margin-right: 35px;
+  margin-bottom: 100px;
+}
+.other .other-left {
+  float: left;
+  position: relative;
+}
+.other .other-left li {
+  float: left;
+  margin: 0 15px;
+}
+.other .other-left li a {
+  color: #fff;
+}
+.other .car-bottom {
+  position: absolute;
+  background-color: white;
+  height: 1px;
+  width: 0;
+  left: 0;
+  top: 25px;
+}
+.other .other-right {
+  float: right;
+  margin-right: 175px;
+}
+.other .other-right li {
+  float: left;
+  margin: 0 15px;
+}
+.other .other-right li a {
+  color: #fff;
+  font-size: 22px;
+}
+.other p {
+  font-size: 16px;
+  color: #fff;
+  margin-top: 45px;
+  line-height: 30px;
+}

@@ -268,15 +268,15 @@ $(function () {
 
 
 
-// <!-- 第三部分 其他 -->
-$('.other-left li').on('mouseenter', function () {
-    $(this).children().eq(1).stop().animate({
-        width: '100%'
-    }, 200)
-})
-$('.other-left li').on('mouseleave', function () {
-    $(this).children().eq(1).stop().animate({
-        width: 0
-    }, 200)
-})
+    // <!-- 第三部分 其他 -->
+    $('.other-left li').on('mouseenter', function () {
+        $(this).children().stop().animate({
+            width: '100%'
+        }, 200)
+    })
+    $('.other-left li').on('mouseleave', function () {
+        $(this).children().stop().animate({
+            width: 0
+        }, 200)
+    })
 })
