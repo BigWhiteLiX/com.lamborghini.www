@@ -207,6 +207,7 @@ $(function () {
             'opacity': 0.5
         })
     })
+    
     $('.car-menu-first-one').on('mouseenter', function () {
         $('.car-parameter').show()
         $('.nav-third-one').siblings().fadeOut()
@@ -279,4 +280,4 @@ $(function () {
             width: 0
         }, 200)
     })
-})
+}) 
