@@ -324,199 +324,162 @@ nav {
 .nav-right .nav-right-right ul:hover {
   opacity: 1;
 }
-.article {
-  margin-top: 190px ;
-}
-.article .article-box {
-  position: absolute;
-  border: 1px solid #d0d0d0;
-  box-sizing: border-box;
-  height: 52px;
-  width: 215px;
-  color: #111;
-  text-align: center;
-  line-height: 52px;
-  bottom: 0;
-  right: 380px;
-}
-.article .article-box:hover {
-  background-color: #111;
-  color: #fff;
-  border: 1px solid #111;
-}
-.article .article-one h6 {
-  color: #111;
-  font-size: 12px;
-  line-height: 0px;
-  font-weight: normal;
-}
-.article .article-one h6 span {
-  font-size: 12px;
-  color: #888a88;
-}
-.article .article-one h4 {
-  color: #111;
-  font-size: 40px;
-  line-height: 0px;
-  font-weight: normal;
-}
-.article .article-one h1 {
-  color: #111;
-  font-size: 58px;
-}
-.article .article-one img {
+.outline {
+  margin-top: 94px;
   width: 100%;
-  height: 800px;
+  height: 815px;
+  background-image: url("../img/5.jpg");
+  background-repeat: no-repeat;
+  padding-left: 160px;
+  padding-top: 60px;
 }
-.article .article-one h5 {
-  color: #111;
-  font-size: 16px;
-  line-height: 30px;
+.outline h6 {
+  font-size: 12px;
+  font-weight: normal;
+  color: #Fff;
 }
-.article .article-one a {
-  font-size: 28px;
-  color: #111;
-  font-weight: bold;
+.outline h3 {
+  font-size: 36px;
+  color: #Fff;
+  margin-top: 40px;
 }
-.article .article-one span {
-  font-size: 16px;
-  color: #242424;
-  line-height: 1.8;
-  font-weight: lighter;
+.outline h1 {
+  font-size: 98px;
+  color: #Fff;
+  margin-top: 40px;
+  line-height: 1.2;
+  width: 950px;
 }
-.article-center {
-  margin-top: 51px;
-  overflow: hidden;
-}
-.article-center p {
-  font-size: 18px;
-  color: #202020;
-  font-weight: lighter;
-}
-.article-center h5 {
-  font-size: 18px;
-  font-weight: lighter;
-  color: #202020;
-  margin-bottom: 80px;
-}
-.article-center h6 {
+.outline ul {
   float: left;
-  font-size: 18px;
-  font-weight: lighter;
-  color: #202020;
-  width: 425px;
-  margin-top: 270px;
-  line-height: 1.7;
+  margin-top: 120px;
 }
-.article-center .article-img {
-  float: right;
-  height: 700px;
-  width: 576px;
-  background-image: url("../img/Supreme 1 (9-16).webp");
-  background-position: 0 -155px;
-  margin-bottom: 50px;
-}
-.article-center h3 {
+.outline ul li {
   float: left;
-  font-size: 18px;
-  font-weight: lighter;
-  color: #202020;
-  line-height: 1.7;
-  margin-bottom: 50px;
+  color: #fff;
+  margin-right: 96px ;
+  line-height: 0;
 }
-.article-center .article-img-two {
+.outline ul li p {
+  font-size: 40px;
+  font-weight: normal;
+}
+.outline ul li .exagon {
   float: left;
-  height: 620px;
-  width: 625px;
-  background-image: url("../img/Supreme 2 (9-16).webp");
-  background-position: 0 -155px;
-  background-size: 100%;
-  margin-bottom: 50px;
+  height: 65px;
+  fill: transparent;
+  stroke: #fff;
   margin-right: 20px;
 }
-.article-center .article-img-three {
+.outline li:nth-child(4) {
+  margin-left: 200px;
+}
+.outline li:nth-child(4) p {
+  width: 340px;
+}
+.outline .exagon:hover {
+  fill: #fff;
+}
+.outline .exagon:hover .foreground {
+  stroke: #111;
+}
+main {
+  margin-top: 150px;
+  overflow: hidden;
+}
+main .main-img-one-left {
   float: left;
-  height: 620px;
-  width: 625px;
-  background-image: url("../img/Supreme 3 (9-16).webp");
-  background-size: 100%;
-  background-position: 0 -155px;
-  margin-bottom: 50px;
+  width: 1268px;
+  height: 680px;
+  position: relative;
+  overflow: hidden;
+  transform: skew(-30deg);
+  margin-left: -195px;
 }
-.article-img-four {
-  width: 100%;
-  background-image: url("../img/1.webp");
-  background-position: 0 -155px;
-  height: 824px;
-  margin-bottom: 100px;
-}
-.article-new {
-  margin-bottom: 20px;
+main .main-img-one-left img {
+  float: left;
   height: 660px;
+  transform: skew(30deg);
+  margin-left: -270px;
 }
-.article-new p {
+main .main-img-one-right {
+  float: left;
+  margin-left: 320px;
+  margin-top: 130px;
+}
+main .main-img-one-right h1 {
+  color: #202020;
   font-size: 28px;
   font-weight: bold;
 }
-.article-new .article-two {
+main .main-img-one-right p {
+  width: 434px;
+  line-height: 2;
+  color: #4d4b4d;
+}
+main .main-img-two-right {
+  float: right;
+  width: 1268px;
+  height: 680px;
+  position: relative;
+  overflow: hidden;
+  transform: skew(-30deg);
+  margin-right: -770px;
+  margin-top: 250px;
+}
+main .main-img-two-right img {
   float: left;
-  width: 414px;
+  height: 660px;
+  transform: skew(30deg);
+  margin-left: -270px;
 }
-.article-new .article-two img {
-  height: 230px;
-  width: 414px;
+main .main-img-two-left {
+  float: left;
+  margin-left: 220px;
+  margin-top: 130px;
 }
-.article-new .article-two h4 {
-  font-size: 12px;
-  font-weight: normal;
+main .main-img-two-left h1 {
   color: #202020;
-}
-.article-new .article-two a {
-  float: left;
-  color: #181818;
   font-size: 28px;
-  margin-bottom: 20px;
+  font-weight: bold;
 }
-.article-new .article-two:nth-child(3) {
-  margin: 0 12px;
+main .main-img-two-left p {
+  width: 724px;
+  line-height: 2;
+  color: #4d4b4d;
 }
-.article-new .article-two:nth-child(3) a {
-  margin-bottom: 55px;
-}
-.article-new .article-box {
+main .main-img-two-left .circulcar-3d {
   float: left;
-  border: 1px solid #d0d0d0;
-  box-sizing: border-box;
-  height: 52px;
-  width: 215px;
-  color: #111;
-  text-align: center;
-  line-height: 52px;
+  height: 65px;
+  fill: transparent;
+  stroke: #111;
+  margin-right: 20px;
+  cursor: pointer;
 }
-.article-new .article-box:hover {
-  background-color: #111;
-  color: #fff;
-  border: 1px solid #111;
+main .main-img-two-left .circulcar-3d text {
+  font-size: 10px;
 }
-.article-more {
-  border: 1px solid #d0d0d0;
-  box-sizing: border-box;
-  height: 52px;
-  width: 215px;
-  text-align: center;
-  margin-bottom: 50px;
-  margin: 40px auto;
+main .main-img-two-left .circulcar-3d .foreground {
+  transition: stroke 0.3s ease-out;
+  stroke: #181818;
+  fill: none;
 }
-.article-more a {
-  line-height: 52px;
-  color: #111;
+main .main-img-two-left h6 {
+  float: left;
+  font-weight: normal;
+  width: 70px;
+  line-height: 2;
+  font-size: 14px;
+  margin-top: 10px;
 }
-.article-more:hover {
-  background-color: #111;
-  border: 1px solid #111;
+main .main-img-two-left .circulcar-3d:hover {
+  fill: #111;
 }
-.article-more:hover a {
-  color: #fff;
+main .main-img-two-left .circulcar-3d:hover .foreground {
+  stroke: #fff;
+}
+main .main-img-two-left .circulcar-3d:hover text {
+  fill: #fff;
 }
 .other {
   height: 310px;

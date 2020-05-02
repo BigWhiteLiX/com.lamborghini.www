@@ -7,6 +7,11 @@ box-sizing: border-box;
     margin: 0 auto;
     width: 1270px;
 }
+.container-two {
+    position: relative;
+    margin: 0 auto;
+    width: 1585px;
+}
 article,
 aside,
 details,
