@@ -399,53 +399,9 @@ nav {
   color: #202020;
   margin-bottom: 80px;
 }
-.article-center h6 {
-  float: left;
-  font-size: 18px;
-  font-weight: lighter;
-  color: #202020;
-  width: 425px;
-  margin-top: 270px;
-  line-height: 1.7;
-}
-.article-center .article-img {
-  float: right;
-  height: 700px;
-  width: 576px;
-  background-image: url("../img/Supreme 1 (9-16).webp");
-  background-position: 0 -155px;
-  margin-bottom: 50px;
-}
-.article-center h3 {
-  float: left;
-  font-size: 18px;
-  font-weight: lighter;
-  color: #202020;
-  line-height: 1.7;
-  margin-bottom: 50px;
-}
-.article-center .article-img-two {
-  float: left;
-  height: 620px;
-  width: 625px;
-  background-image: url("../img/Supreme 2 (9-16).webp");
-  background-position: 0 -155px;
-  background-size: 100%;
-  margin-bottom: 50px;
-  margin-right: 20px;
-}
-.article-center .article-img-three {
-  float: left;
-  height: 620px;
-  width: 625px;
-  background-image: url("../img/Supreme 3 (9-16).webp");
-  background-size: 100%;
-  background-position: 0 -155px;
-  margin-bottom: 50px;
-}
 .article-img-four {
   width: 100%;
-  background-image: url("../img/1.webp");
+  background-image: url("../img/huracan.jpg");
   background-position: 0 -155px;
   height: 824px;
   margin-bottom: 100px;
