@@ -257,6 +257,56 @@ $(function () {
         $('.nav-third-car').show()
     })
 
+    // < !--第四部分    汽车配置-- >
+    // 当点击颜色的时候字体透明度为1，下拉列表移入颜色部分
+    $('.configure-menu li').on("click", function () {
+        $(this).css({
+            'opacity': 1
+        })
+        $(this).siblings().css({
+            'opacity': 0.4
+        })
+    })
+    $(".configure-color li").on("click", function () {
+        var index = $(this).index()
+        $(".configure-right li").eq(index).show();
+        $('.configure-right li').eq(index).siblings().hide();
+    })
+    // 汽车轰鸣mp3
+    $('.play').on("click", function () {
+        $(this).hide()
+        $(this).prev().show()
+
+    })
+    $('.pause').on("click", function () {
+        $(this).hide()
+        $(this).next().show()
+
+    })
+    // 汽车底部轮播图
+    // 1.定义一个索引，控制轮播项，默认从0开始
+    var index2 = 0;
+    // 2.点击右侧按钮实现下一项轮播
+    $('.right').on('click', function () {
+        // 让索引递增
+        index2++;
+        // 限制
+        if (index2 > $('.slider li').length - 1) {
+            index2 = 0;
+        }
+        $('.slider li').eq(index2).fadeIn(500).siblings().fadeOut();
+    })
+
+    // 3.点击左侧按钮
+    $('.left').on('click', function () {
+        index2--;
+
+        if (index2 < 0) {
+            index2 = $('.slider li').length - 1
+        }
+        $('.slider li').eq(index2).fadeIn(500).siblings().fadeOut();
+    })
+
     //   顶部导航栏移出效果
     $('nav').on('mouseleave', function () {
         $(this).animate({
